@@ -1,5 +1,5 @@
 [package]
-name = "serde_traits"
+name = "serde_core"
 version = "1.0.80" # remember to update html_root_url
 authors = ["Erick Tryzelaar <erick.tryzelaar@gmail.com>", "David Tolnay <dtolnay@gmail.com>"]
 license = "MIT/Apache-2.0"

@@ -86,10 +86,10 @@
 // Support using Serde without the standard library!
 #![cfg_attr(not(feature = "std"), no_std)]
 
-extern crate serde_traits;
+extern crate serde_core;
 
 #[doc(inline)]
-pub use self::serde_traits::*;
+pub use self::serde_core::*;
 
 // Re-export #[derive(Serialize, Deserialize)].
 //
