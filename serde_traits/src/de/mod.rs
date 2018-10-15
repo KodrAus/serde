@@ -123,13 +123,18 @@ use lib::*;
 
 ////////////////////////////////////////////////////////////////////////////////
 
+#[cfg(feature = "impls")]
 pub mod value;
 
+#[cfg(feature = "impls")]
 mod from_primitive;
+#[cfg(feature = "impls")]
 mod ignored_any;
+#[cfg(feature = "impls")]
 mod impls;
 mod utf8;
 
+#[cfg(feature = "impls")]
 pub use self::ignored_any::IgnoredAny;
 
 ////////////////////////////////////////////////////////////////////////////////

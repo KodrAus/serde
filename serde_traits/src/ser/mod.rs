@@ -116,9 +116,12 @@
 
 use lib::*;
 
+#[cfg(feature = "impls")]
 mod impls;
+#[cfg(feature = "impls")]
 mod impossible;
 
+#[cfg(feature = "impls")]
 pub use self::impossible::Impossible;
 
 ////////////////////////////////////////////////////////////////////////////////
