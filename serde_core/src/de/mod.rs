@@ -2237,6 +2237,7 @@ pub trait VariantAccess<'de>: Sized {
 /// #
 /// # fn main() {}
 /// ```
+#[cfg(feature = "impls")]
 pub trait IntoDeserializer<'de, E: Error = value::Error> {
     /// The type of the deserializer being converted into.
     type Deserializer: Deserializer<'de, Error = E>;

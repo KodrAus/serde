@@ -40,6 +40,8 @@ use lib::*;
 use self::private::{First, Second};
 use de::{self, Expected, IntoDeserializer, SeqAccess};
 use private::de::size_hint;
+
+#[cfg(feature = "ser")]
 use ser;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -95,6 +97,7 @@ impl de::Error for Error {
     }
 }
 
+#[cfg(feature = "ser")]
 impl ser::Error for Error {
     #[cold]
     fn custom<T>(msg: T) -> Self
